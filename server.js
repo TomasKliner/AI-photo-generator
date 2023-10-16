@@ -25,7 +25,8 @@ app.post('/image', async (req, res) => {
         size: '512x512'
     });
 
-    const image = response.data.data[0].url;
+
+    const image = response.data;
     res.send({image});
 });
 
